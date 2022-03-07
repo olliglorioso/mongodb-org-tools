@@ -11,10 +11,6 @@ set -a
 set +a
 
 sudo su - <<EOF
-    adduser --disabled-password --gecos '' docker
-    adduser docker sudo 
-    echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-
     sudo apt-get install -y gnupg
     wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
     echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
