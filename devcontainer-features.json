@@ -1,0 +1,9 @@
+{
+    "features": [
+        {
+            "id": "mongodb-org-tools",
+            "name": "MongoDB Database Tools",
+            "include": ["ubuntu"]
+        }
+    ]
+}
